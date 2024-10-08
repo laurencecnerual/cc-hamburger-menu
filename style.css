@@ -10,7 +10,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  /* padding: 0 20px; */
 }
 
 a {
@@ -31,11 +31,29 @@ li {
   font-family: "Open Sans", system-ui;
 }
 
-li:hover {
+h2:hover, li:hover {
   background-color: rgb(157,26,70);
 }
 
 h1 {
   font-size: 1.3rem;
   margin: 0;
+  padding-left: 20px;
+}
+
+h2 {
+  margin: 0;
+  display: none;
+  font-size: 1.3rem;
+  padding: 16px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  ul {
+    display: none;
+  } 
+
+  h2 {
+    display: block;
+  }
 }
