@@ -25,5 +25,19 @@
     <li class="mobile"><a href="#">about</a></li>
     <li class="mobile"><a href="#">contact</a></li>
   </ul>
+  <script>
+    let hamburger = document.getElementById("menu-icon");
+    let menu = document.getElementById("mobile");
+    let menuShouldBeDisplayed = false;
+    hamburger.addEventListener("click", (e) => {
+      menuShouldBeDisplayed = menuShouldBeDisplayed ? false : true;
+      
+      if (menuShouldBeDisplayed) {
+        menu.style.setProperty("display", "flex");
+      } else {
+        menu.style.setProperty("display", "none");
+      }
+    });
+  </script>
 </body>
 </html>
