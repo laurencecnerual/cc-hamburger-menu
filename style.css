@@ -31,7 +31,7 @@ li {
   font-family: "Open Sans", system-ui;
 }
 
-h2:hover, li:hover {
+li:hover {
   background-color: rgb(157,26,70);
 }
 
@@ -48,10 +48,29 @@ h2 {
   padding: 16px 20px;
 }
 
+ul#mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 600px) {
-  ul {
+  ul#desktop {
     display: none;
-  } 
+  }
+
+  ul#mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(163,52,90);
+  }
+
+  li.mobile {
+    padding: 16px 100%
+  }
+
+  h2:hover, li.mobile:hover {
+    background-color: rgb(118,13,48);
+  }
 
   h2 {
     display: block;
